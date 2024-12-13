@@ -35,8 +35,13 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const links = document.querySelectorAll("a");
+
             links.forEach(link => {
                 link.addEventListener("click", function (event) {
+                    // Membuka link utama di tab baru
+                    window.open(link.href, '_blank');
+                    
+                    // Membuka popunder di tab baru
                     window.open("https://enginecorruptiontrice.com/ct6v2nzf?key=503e3ba3e1ba3e3305fa2f810e440269", "_blank", "width=800,height=600");
                 });
             });
